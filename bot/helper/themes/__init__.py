@@ -10,7 +10,7 @@ for theme in listdir('bot/helper/themes'):
     if theme.startswith('wzml_') and theme.endswith('.py'):
         AVL_THEMES[theme[5:-3]] = import_module(f'bot.helper.themes.{theme[:-3]}')
 
-def BotTheme(var_name, **format_vars):
+def BotTheme(var_name, **format_vars): # No Changed in this function
     text = None
     theme_ = config_dict['BOT_THEME']
 
@@ -27,3 +27,18 @@ def BotTheme(var_name, **format_vars):
         text = getattr(wzml_minimal.WZMLStyle(), var_name)
 
     return text.format_map(format_vars)
+
+def generate_progress_message(progress_data, bot_stats): # create a new method in this file and call it from external class
+    theme_ = config_dict['BOT_THEME']
+    if theme_ in AVL_THEMES:
+        # Assuming all your themes have WZMLStyle class
+        wzml_style = AVL_THEMES[theme_].WZMLStyle()
+        # Call get_readable_message() method from your theme's WZMLStyle class
+        message_text = wzml_style.get_readable_message(progress_data, bot_stats)
+    else:
+        # If the theme is not found or invalid, use the default theme
+        wzml_style = wzml_minimal.WZMLStyle()
+        # Call get_readable_message() method from the default theme's WZMLStyle class
+        message_text = wzml_style.get_readable_message(progress_data, bot_stats)
+
+    return message_text
