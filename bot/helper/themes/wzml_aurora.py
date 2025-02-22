@@ -6,7 +6,7 @@ class WZMLStyle:
     ST_BN1_NAME = '🌌 ✦ Repo ✦'
     ST_BN1_URL = 'https://www.github.com/weebzone/WZML-X'
     ST_BN2_NAME = '📢 ✦ Updates ✦'
-    ST_BN2_URL = 'https://t.me/WZML_X'
+    ST_BN2_URL = 'https://t.me/NxLeech'
     ST_MSG = '''✨ 🚀 Mirror Magic ✨\n\nTurn links 🔗, files 📁, and torrents 磁 into Google Drive clouds ☁️, Rclone hubs ⚙️, Telegram stashes 📦, or DDL drops ⚡ with a tap!\n\nTap <code>{help_command}</code> to unlock bot powers 🧙!'''
     ST_BOTPM = '''✉️ Secret Bot Cave 🦇! Drop links or files here 🤫!'''
     ST_UNAUTH = '''🚫 Zone locked 🔒! Deploy your own WZML-X mirror bot 🧙.'''
@@ -108,26 +108,17 @@ class WZMLStyle:
 
     # def get_readable_message(): ---> bot_utilis.py
     ####--------OVERALL MSG HEADER----------
-    #STATUS_NAME = '📦 ✦ {Name} ✦ 📦'
-    STATUS_NAME = '🌚 {Name} 🌚'  # Modified Header
+    STATUS_NAME = '💀 ✦ {Name} ✦ 💀'
 
     #####---------PROGRESSIVE STATUS-------
-    #BAR = '\n{Bar} ✦'
-    BAR = '\n{Bar}'  # Modified Bar, removed ✦
-    #PROCESSED = '\n✅ Crafted: {Processed}'
-    PROCESSED = '\n🛰️ Downloading: {Processed} / {Size}'  # Modified Download Status
-    #STATUS = '\n📶 Signal: <a href="{Url}">{Status}</a>'
-    STATUS = '' #Removed Status
-    #ETA = ' | ⏰ Soon™: {Eta}'
-    ETA = '⏱️ ETA: {Eta} 🚀 Speed: {Speed}' #Modified ETA
-    #SPEED = '\n💨 Velocity: {Speed}'
-    SPEED = '' #Removed Speed
-    #ELAPSED = ' | ⏱️ Time Warp: {Elapsed}'
-    ELAPSED = '' #Removed Elapsed
-    #ENGINE = '\n⚙️ Core: {Engine}'
-    ENGINE = '\n⚙️ Engine: {Engine} | {Mode}' # Modified Engine
-    #STA_MODE = '\n🕹️ Style: {Mode}'
-    STA_MODE = '' #Removed Sta Mode
+    BAR = '\n{Bar} ✦'
+    PROCESSED = '\n✅ Crafted: {Processed}'
+    STATUS = '\n📶 Signal: <a href="{Url}">{Status}</a>'
+    ETA = ' | ⏰ Soon™: {Eta}'
+    SPEED = '\n💨 Velocity: {Speed}'
+    ELAPSED = ' | ⏱️ Time Warp: {Elapsed}'
+    ENGINE = '\n⚙️ Core: {Engine}'
+    STA_MODE = '\n🕹️ Style: {Mode}'
     SEEDERS = '\n🌱 Helpers: {Seeders} | '
     LEECHERS = '🦹 Looters: {Leechers}'
 
@@ -144,30 +135,21 @@ class WZMLStyle:
     NON_ENGINE = '\n⚙️ Core: {Engine}'
 
     ####--------OVERALL MSG FOOTER----------
-    #USER = '\n👤 Hero: <code>{User}</code> | '
-    USER = '\n👤 Commander: {User} | ' #Modified user
-    #ID = '🆔 Tag: <code>{Id}</code>'
-    ID = '' #Removed ID
+    USER = '\n👤 Hero: <code>{User}</code> | '
+    ID = '🆔 Tag: <code>{Id}</code>'
     BTSEL = '\n🕹️ Pick: {Btsel}'
-    #CANCEL = '\n🚫 End Quest: {Cancel}\n\n'
-    CANCEL = '\n🚫 {Cancel}\n\n' #Modified Cancel
+    CANCEL = '\n🚫 End Quest: {Cancel}\n\n'
 
     ####------FOOTER--------
-    FOOTER = '🛰️ Bot Systems 🛰️\n' #Modified footer header
+    FOOTER = '🤖 Bot Pulse 🤖\n'
     TASKS = '📌 Quests: {Tasks}\n'
     BOT_TASKS = '📌 Quests: {Tasks}/{Ttask} | 📝 Free Slots: {Free}\n'
-    #Cpu = '💻 CPU Surge: {cpu}% | '
-    Cpu = '💻 CPU: {cpu}% | ' #Modified CPU
+    Cpu = '💻 CPU Surge: {cpu}% | '
     FREE = '💾 Free RAM: {free} [{free_p}%]'
-    #Ram = '\n🧠 RAM Flow: {ram}% | '
-    Ram = '💾 RAM: {ram}% | ' #Modified Ram
-    #uptime = '⬆️ Online Time: {uptime}'
-    uptime = '⚡ Uptime: {uptime}' #Modified Uptime
-    #DL = '\n⬇️ Incoming: {DL}/s | '
-    DL = '📡 DL: {DL}/s | ' #Modified DL
-    #UL = '⬆️ Outgoing: {UL}/s'
-    UL = '📤 UL: {UL}/s' #Modified UL
-    NX = '\nPowered by NxLeech'
+    Ram = '\n🧠 RAM Flow: {ram}% | '
+    uptime = '✅ Online Time: {uptime}'
+    DL = '\n⬇️ Incoming: {DL}/s | '
+    UL = '⬆️ Outgoing: {UL}/s'
 
     ###--------BUTTONS-------
     PREVIOUS = '⏪'
@@ -179,7 +161,7 @@ class WZMLStyle:
 
     # async def countNode(_, message): ----> gd_count.py
     COUNT_MSG = 'Counting Portals... 💫'
-    COUNT_NAME = '📦 ✦ {COUNT_NAME} ✦ 📦\n\n'
+    COUNT_NAME = '🌚 ✦ {COUNT_NAME} ✦ 🌚\n\n'
     COUNT_SIZE = 'Size: {COUNT_SIZE}\n'
     COUNT_TYPE = 'Essence: {COUNT_TYPE}\n'
     COUNT_SUB = 'Sub-Portals: {COUNT_SUB}\n'
@@ -202,4 +184,5 @@ class WZMLStyle:
     MIRROR = '''⚙️ Mirror Rituals 🪞\n\nRClone Key: <i>{RCLONE}</i>\nCallsign: <code>{MPREFIX}</code>\nEnding: <code>{MSUFFIX}</code>\nRename Spell: <code>{MREMNAME}</code>\nDestination: <i>{DDL_SERVER}</i>\nTeam Drive: <i>{TMODE}</i>\nTeam Strength: <i>{USERTD}</i>\nDaily Summon: <code>{DM}</code>'''
 
     LEECH = '''⚙️ Steal Settings ⚙️\n\nDaily Raids: <code>{DL}</code>\nType: <i>{LTYPE}</i>\nImage Sigil: <i>{THUMB}</i>\nSplit Chunk: <code>{SPLIT_SIZE}</code>\nEqual Share: <i>{EQUAL_SPLIT}</i>\nMedia Group: <i>{MEDIA_GROUP}</i>\nCrafting: <code>{LCAPTION}</code>\nPrefix: <code>{LPREFIX}</code>\nEnding: <code>{LSUFFIX}</code>\nBurial Site: <code>{LDUMP}</code>\nAlter Name: <code>{LREMNAME}</code>'''
+
     
