@@ -6,7 +6,7 @@ class WZMLStyle:
     ST_BN1_NAME = '🌌 ✦ Repo ✦'
     ST_BN1_URL = 'https://www.github.com/weebzone/WZML-X'
     ST_BN2_NAME = '📢 ✦ Updates ✦'
-    ST_BN2_URL = 'https://t.me/WZML_X'
+    ST_BN2_URL = 'https://t.me/NxLeech'
     ST_MSG = '''✨ 🚀 Mirror Magic ✨\n\nTurn links 🔗, files 📁, and torrents 磁 into Google Drive clouds ☁️, Rclone hubs ⚙️, Telegram stashes 📦, or DDL drops ⚡ with a tap!\n\nTap <code>{help_command}</code> to unlock bot powers 🧙!'''
     ST_BOTPM = '''✉️ Secret Bot Cave 🦇! Drop links or files here 🤫!'''
     ST_UNAUTH = '''🚫 Zone locked 🔒! Deploy your own WZML-X mirror bot 🧙.'''
