@@ -69,7 +69,7 @@ class WZMLStyle:
     L_LOG_START = "➡️ Stealing Speed 💨\n\n👤 Shadow Agent: {mention} ( #ID{uid} )\n🔗 Target: <a href='{msg_link}'>Lock On</a>"
 
     # async def onUploadComplete(): ---> tasks_listener.py
-    NAME = '📦 Loot Drop 📦\n\n<b>{Name}</b>\n\n'
+    NAME = '🌚 Loot Drop 🌚\n\n<b>{Name}</b>\n\n'
     SIZE = 'Size: {Size}\n'
     ELAPSE = 'Time: {Time}\n'
     MODE = 'Mode: {Mode}\n'
@@ -78,7 +78,7 @@ class WZMLStyle:
     L_TOTAL_FILES = 'All Drops: {Files}\n'
     L_CORRUPTED_FILES = 'Shattered Drops: {Corrupt}\n'
     L_CC = 'Sourced By: {Tag}\n\n'
-    PM_BOT_MSG = '➡️ Stash Sent! 📦!'
+    PM_BOT_MSG = '➡️ Stash Sent! 💀!'
     L_BOT_MSG = '➡️ Secret Stash to Bot PM! ✉️'
     L_LL_MSG = '➡️ Stash Map Available! 🗺️\n'
 
@@ -108,7 +108,7 @@ class WZMLStyle:
 
     # def get_readable_message(): ---> bot_utilis.py
     ####--------OVERALL MSG HEADER----------
-    STATUS_NAME = '📦 ✦ {Name} ✦ 📦'
+    STATUS_NAME = '💕 ✦ {Name} ✦ 💕'
 
     #####---------PROGRESSIVE STATUS-------
     BAR = '\n{Bar} ✦'
