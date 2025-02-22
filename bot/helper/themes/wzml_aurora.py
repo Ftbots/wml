@@ -186,12 +186,11 @@ LEECHERS = '🦹 Leechers: {Leechers}'
 
     ####--------SEEDING----------
     SEED_SIZE = '\n📦 Weight: {Size}'
-    SEED_SPEED = '\n⚡ Burst: {Speed} | '
-    UPLOADED = '⬆️ Airborne: {Upload}'
-    RATIO = '\n♻️ Cycle: {Ratio} | '
-    TIME = '⏰ Duration: {Time}'
-    SEED_ENGINE = '\n⚙️ Heart: {Engine}'
-
+SEED_SPEED = '\n⚡ Burst: {Speed} | '
+UPLOADED = '⬆️ Airborne: {Upload}'
+RATIO = '\n♻️ Cycle: {Ratio} | '
+TIME = '⏰ Duration: {Time}'
+SEED_ENGINE = '\n⚙️ Heart: {Engine}'
     ####--------NON-PROGRESSIVE + NON SEEDING----------
     STATUS_SIZE = '\n📦 Weight: {Size}'
     NON_ENGINE = '\n⚙️ Core: {Engine}'
