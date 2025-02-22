@@ -39,14 +39,65 @@ class WZMLStyle:
     HELP_HEADER = "🔥 Guide to Awesomeness 🔥\n\nTap a button to dive into each command's secrets! 🕵️"
 
     # async def stats(client, message):
-    BOT_STATS = '''🚀 Bot Stats 🧠\n\n⏱️ Uptime: {bot_uptime}\n\n📊 Ram 🧠\n{ram_bar} {ram}%\nUsed: {ram_u} | Free: {ram_f} | Total: {ram_t}\n\n🔀 Swap Memory 🔀\n{swap_bar} {swap}%\nUsed: {swap_u} | Free: {swap_f} | Total: {swap_t}\n\n💾 Disk 💾\n{disk_bar} {disk}%\nRead: {disk_read}\nWrite: {disk_write}\nUsed: {disk_u} | Free: {disk_f} | Total: {disk_t}'''
 
-    SYS_STATS = '''⚙️ Machine System ⚙️\n\n⏱️ OS Uptime: {os_uptime}\nℹ️ OS Version: {os_version}\n💻 OS Architecture: {os_arch}\n\n📡 Network Stats 📡\n⬆️ Upload: {up_data}\n⬇️ Download: {dl_data}\n📤 Sent: {pkt_sent}k\n📥 Received: {pkt_recv}k\n⚡ Total Traffic: {tl_data}\n\n🔥 Core Power 🔥\n{cpu_bar} {cpu}%\nClock Speed: {cpu_freq}\nLoad: {sys_load}\n🔥 Real Cores: {p_core} | 💻 Virtual Cores: {v_core}\nTotal Cores: {total_core}\nUsable: {cpu_use}'''
+    BOT_STATS = '''🚀 **Bot Stats** 🧠
 
+⏱️ **Uptime**: {bot_uptime}
+
+📊 **RAM** 🧠
+{ram_bar} {ram}%
+- **Used**: {ram_u} | **Free**: {ram_f} | **Total**: {ram_t}
+
+🔀 **Swap Memory** 🔀
+{swap_bar} {swap}%
+- **Used**: {swap_u} | **Free**: {swap_f} | **Total**: {swap_t}
+
+💾 **Disk** 💾
+{disk_bar} {disk}%
+- **Read**: {disk_read}
+- **Write**: {disk_write}
+- **Used**: {disk_u} | **Free**: {disk_f} | **Total**: {disk_t}
+'''
+    SYS_STATS = '''⚙️ **Machine System** ⚙️
+
+⏱️ **OS Uptime**: {os_uptime}
+ℹ️ **OS Version**: {os_version}
+💻 **OS Architecture**: {os_arch}
+
+📡 **Network Stats** 📡
+⬆️ **Upload**: {up_data}
+⬇️ **Download**: {dl_data}
+📤 **Sent**: {pkt_sent}k
+📥 **Received**: {pkt_recv}k
+⚡ **Total Traffic**: {tl_data}
+
+🔥 **Core Power** 🔥
+{cpu_bar} {cpu}%
+- **Clock Speed**: {cpu_freq}
+- **Load**: {sys_load}
+
+🔥 **Real Cores**: {p_core} | 💻 **Virtual Cores**: {v_core}
+- **Total Cores**: {total_core}
+- **Usable**: {cpu_use}
+'''
     REPO_STATS = '''📚 CPU 📚\n\n✨ Last Mod: {last_commit}\n🤖 Bot Build: {bot_version}\n🔥 Newest Drop: {lat_version}\n📜 Patch Notes: {commit_details}\n\n🔮 Dev's Message: <code>{remarks}</code>'''
 
-    BOT_LIMITS = '''🛑 Bot Restraints ⛓️\n\n🔗 Direct Limits: {DL} GB\n🌀 Torrent Limits: {TL} GB\n☁️ GDrive Limits: {GL} GB\n🎬 YT-DLP Limit: {YL} GB\n🎶 Playlist Limit: {PL}\n💾 Mega Limit: {ML} GB\n🔄 Clone Limit: {CL} GB\nLeach Limits: {LL} GB\n\n🔑 Key Life: {TV}\n⏰ User Wait: {UTI} / task\n👯 User Tasks: {UT}\n🤖 Bot Parallel Tasks: {BT}'''
+    BOT_LIMITS = '''🛑 **Bot Restraints** ⛓️
 
+🔗 **Direct Limits**: {DL} GB
+🌀 **Torrent Limits**: {TL} GB
+☁️ **GDrive Limits**: {GL} GB
+🎬 **YT-DLP Limit**: {YL} GB
+🎶 **Playlist Limit**: {PL}
+💾 **Mega Limit**: {ML} GB
+🔄 **Clone Limit**: {CL} GB
+💻 **Leech Limits**: {LL} GB
+
+🔑 **Key Life**: {TV}
+⏰ **User Wait**: {UTI} / task
+👯 **User Tasks**: {UT}
+🤖 **Bot Parallel Tasks**: {BT}
+'''
     # async def restart(client, message): ---> __main__.py
     RESTARTING = '🔄 Bot Rebooting... 🚀'
     # ---------------------
@@ -69,40 +120,51 @@ class WZMLStyle:
     L_LOG_START = "➡️ Stealing Speed 💨\n\n👤 Shadow Agent: {mention} ( #ID{uid} )\n🔗 Target: <a href='{msg_link}'>Lock On</a>"
 
     # async def onUploadComplete(): ---> tasks_listener.py
-    NAME = '💀 Loot Drop 💀\n\n<b>{Name}</b>\n\n'
-    SIZE = 'Size: {Size}\n'
-    ELAPSE = 'Time: {Time}\n'
-    MODE = 'Mode: {Mode}\n'
+    NAME = '''💀 **Loot Drop** 💀
+
+<b>{Name}</b>
+
+📦 **Size**: {Size}
+⏱️ **Time**: {Time}
+🎮 **Mode**: {Mode}
+'''
 
     # ----- LEECH -------
-    L_TOTAL_FILES = 'Total Files: {Files}\n'
-    L_CORRUPTED_FILES = 'Shattered Files: {Corrupt}\n'
-    L_CC = 'Sourced By: {Tag}\n\n'
-    PM_BOT_MSG = '➡️ File Has been Sent! 💓!'
-    L_BOT_MSG = '➡️ Secret Stash to Bot PM! ✉️'
-    L_LL_MSG = '➡️ Stash Link Available! 🗺️\n'
+    L_TOTAL_FILES = '''📁 **Total Files**: {Files}
+💔 **Shattered Files**: {Corrupt}
+
+🔖 **Sourced By**: {Tag}
+
+➡️ **File Has been Sent!** 💓
+➡️ **Secret Stash to Bot PM!** ✉️
+➡️ **Stash Link Available!** 🗺️
+'''
 
     # ----- MIRROR -------
-    M_TYPE = 'Content Type: {Mimetype}\n'
-    M_SUBFOLD = 'Sub Hideouts: {Folder}\n'
-    TOTAL_FILES = 'Total Drops: {Files}\n'
-    RCPATH = 'Stash Path: <code>{RCpath}</code>\n'
-    M_CC = 'Stash Handled By: {Tag}\n\n'
-    M_BOT_MSG = '➡️ Cloud keys Dispatched! 🔑'
+    M_TYPE = '''📂 **Content Type**: {Mimetype}
+🏠 **Sub Hideouts**: {Folder}
+
+📊 **Total Drops**: {Files}
+
+🔑 **Stash Path**: <code>{RCpath}</code>
+🔧 **Stash Handled By**: {Tag}
+
+➡️ **Cloud Keys Dispatched!** 🔑
+'''
 
     # ----- BUTTONS -------
-    CLOUD_LINK = '☁️ Cloud Portal'
-    SAVE_MSG = '💾 Save Powerup'
-    RCLONE_LINK = '⚙️ RClone Engine'
+    CLOUD_LINK = '☁️ Cloud Link'
+    SAVE_MSG = '💾 Save Msg'
+    RCLONE_LINK = '⚙️ RClone link'
     DDL_LINK = '⚡ {Serv} Warp'
     SOURCE_URL = '🔗 Source Link'
-    INDEX_LINK_F = '📁 Index Zone'
+    INDEX_LINK_F = '📁 Index link'
     INDEX_LINK_D = '⚠️ Index Hazard'
     VIEW_LINK = '👁️ Glimpse Loot'
     CHECK_PM = '💬 PM Inventory'
     CHECK_LL = '📝 Loot Logs'
     MEDIAINFO_LINK = 'ℹ️ Loot Intel'
-    SCREENSHOTS = '🖼️ Visions'
+    SCREENSHOTS = '🖼️ Screenshots'
 
     # ---------------------
 
@@ -112,15 +174,15 @@ class WZMLStyle:
 
     #####---------PROGRESSIVE STATUS-------
     BAR = '\n{Bar} ✦'
-    PROCESSED = '\n✅ Proceed: {Processed}'
-    STATUS = '\n📶 Status: <a href="{Url}">{Status}</a>'
-    ETA = ' | ⏰ ETA™: {Eta}'
-    SPEED = '\n💨 Speed: {Speed}'
-    ELAPSED = ' | ⏱️ Past: {Elapsed}'
-    ENGINE = '\n⚙️ Engine: {Engine}'
-    STA_MODE = '\n🕹️ Style: {Mode}'
-    SEEDERS = '\n🌱 Helpers: {Seeders} | '
-    LEECHERS = '🦹 Looters: {Leechers}'
+PROCESSED = '\n✅ Proceed: {Processed}'
+STATUS = '\n📶 Status: <a href="{Url}">{Status}</a>'
+ETA = ' | ⏰ ETA™: {Eta}'
+SPEED = '\n💨 Speed: {Speed}'
+ELAPSED = ' | ⏱️ Past: {Elapsed}'
+ENGINE = '\n⚙️ Engine: {Engine}'
+STA_MODE = '\n🕹️ Style: {Mode}'
+SEEDERS = '\n🌱 Seeders: {Seeders} | '
+LEECHERS = '🦹 Leechers: {Leechers}'
 
     ####--------SEEDING----------
     SEED_SIZE = '\n📦 Weight: {Size}'
@@ -136,20 +198,24 @@ class WZMLStyle:
 
     ####--------OVERALL MSG FOOTER----------
     USER = '\n👤 Hero: <code>{User}</code> | '
-    ID = '🆔 Tag: <code>{Id}</code>'
-    BTSEL = '\n🕹️ Pick: {Btsel}'
-    CANCEL = '\n🚫 Cancle: {Cancel}\n\n'
+ID = '🆔 Tag: <code>{Id}</code>'
+BTSEL = '\n🕹️ Pick: {Btsel}'
+CANCEL = '\n🚫 Cancel: {Cancel}\n\n'
 
     ####------FOOTER--------
-    FOOTER = '🤖 Bot Stats 🤖\n'
-    TASKS = '📌 Quests: {Tasks}\n'
-    BOT_TASKS = '📌 Quests: {Tasks}/{Ttask} | 📝 Free Slots: {Free}\n'
-    Cpu = '💻 CPU: {cpu}% | '
-    FREE = '💾 Free: {free} [{free_p}%]'
-    Ram = '\n🧠 RAM: {ram}% | '
-    uptime = '✅ Online Time: {uptime}'
-    DL = '\n⬇️ DL: {DL}/s | '
-    UL = '⬆️ UL: {UL}/s'
+    FOOTER = '''
+🤖 **Bot Stats** 🤖
+---------------------
+📌 **Quests**: {Tasks}
+
+📌 **Quests**: {Tasks}/{Ttask} | 📝 **Free Slots**: {Free}
+
+💻 **CPU**: {cpu}% | 💾 **Free**: {free} [{free_p}%]
+
+🧠 **RAM**: {ram}% | ✅ **Online Time**: {uptime}
+
+⬇️ **DL**: {DL}/s | ⬆️ **UL**: {UL}/s
+'''
 
     ###--------BUTTONS-------
     PREVIOUS = '⏪'
@@ -183,6 +249,19 @@ class WZMLStyle:
 
     MIRROR = '''⚙️ Mirror Rituals 🪞\n\nRClone Key: <i>{RCLONE}</i>\nCallsign: <code>{MPREFIX}</code>\nEnding: <code>{MSUFFIX}</code>\nRename Spell: <code>{MREMNAME}</code>\nDestination: <i>{DDL_SERVER}</i>\nTeam Drive: <i>{TMODE}</i>\nTeam Strength: <i>{USERTD}</i>\nDaily Summon: <code>{DM}</code>'''
 
-    LEECH = '''⚙️ Leech Settings ⚙️\n\nDaily Leech: <code>{DL}</code>\nType: <i>{LTYPE}</i>\nCustom Thumbnail: <i>{THUMB}</i>\nSplit Size: <code>{SPLIT_SIZE}</code>\nEqual Spilit: <i>{EQUAL_SPLIT}</i>\nMedia Group: <i>{MEDIA_GROUP}</i>\nLeech Captions: <code>{LCAPTION}</code>\nPrefix: <code>{LPREFIX}</code>\nLeech Suffix: <code>{LSUFFIX}</code>\nLeech Dump: <code>{LDUMP}</code>\nLeech ReName: <code>{LREMNAME}</code>'''
+    LEECH = '''
+⚙️ **Leech Settings** ⚙️
 
+- **Daily Leech**: <code>{DL}</code>
+- **Type**: <i>{LTYPE}</i>
+- **Custom Thumbnail**: <i>{THUMB}</i>
+- **Split Size**: <code>{SPLIT_SIZE}</code>
+- **Equal Split**: <i>{EQUAL_SPLIT}</i>
+- **Media Group**: <i>{MEDIA_GROUP}</i>
+- **Leech Captions**: <code>{LCAPTION}</code>
+- **Prefix**: <code>{LPREFIX}</code>
+- **Leech Suffix**: <code>{LSUFFIX}</code>
+- **Leech Dump**: <code>{LDUMP}</code>
+- **Leech ReName**: <code>{LREMNAME}</code>
+'''
     
